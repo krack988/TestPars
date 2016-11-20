@@ -17,14 +17,11 @@ public class GetPage {
 
             while (line !=null){
                 line=buf.readLine();
-//                System.out.println(line);
                 al.add(line+"\n");
             }
         }catch (IOException e){
             System.out.println("Exception "+e.getMessage());
         }
-//        System.out.println(line);
         return al;
-
     }
 }
